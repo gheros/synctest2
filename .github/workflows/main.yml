@@ -23,6 +23,8 @@ jobs:
       - name: Merge Gitee changes
         run: |
           git checkout main
+          git config --global user.email "gheros@qq.com"
+          git config --global user.name "gheros"
           git merge gitee/master --allow-unrelated-histories
 
       - name: Push to GitHub
