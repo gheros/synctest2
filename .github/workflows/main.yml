@@ -23,7 +23,7 @@ jobs:
       - name: Merge Gitee changes
         run: |
           git checkout main
-          git merge gitee/main --allow-unrelated-histories
+          git merge gitee/master --allow-unrelated-histories
 
       - name: Push to GitHub
         run: |
