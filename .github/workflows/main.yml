@@ -14,7 +14,7 @@ jobs:
 
       - name: Add Gitee remote
         run: |
-          git remote add gitee https://gitee.com/moheng_blockchain/github-sync.git
+          git remote add gitee https://${{ secrets.username }}:${{ secrets.GITEE_TOKEN }}@gitee.com/moheng_blockchain/github-sync.git
 
       - name: Fetch from Gitee
         run: |
